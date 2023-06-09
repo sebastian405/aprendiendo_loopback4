@@ -37,6 +37,10 @@ export class Usuarios extends Entity {
   })
   clave?: string;
 
+  @property({
+    type: 'number',
+  })
+  id_rol?: number;
 
   constructor(data?: Partial<Usuarios>) {
     super(data);
